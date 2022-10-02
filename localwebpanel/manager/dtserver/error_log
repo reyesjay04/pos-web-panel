@@ -1,0 +1,8 @@
+[04-Apr-2021 20:25:50 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Apr-2021 20:25:50 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Apr-2021 20:32:20 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Apr-2021 20:32:20 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[07-Sep-2021 14:27:23 Asia/Manila] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/johnpalencia/aws.aiolosinnovativesolutions.com/manager/dtserver/getsumdash.php on line 17
+[07-Sep-2021 14:27:48 Asia/Manila] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/johnpalencia/aws.aiolosinnovativesolutions.com/manager/dtserver/getsumdash.php on line 17
+[10-Sep-2021 10:10:06 Asia/Manila] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/johnpalencia/aws.aiolosinnovativesolutions.com/manager/dtserver/getsumdash.php on line 17
+[10-Sep-2021 10:11:36 Asia/Manila] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/johnpalencia/aws.aiolosinnovativesolutions.com/manager/dtserver/getsumdash.php on line 17

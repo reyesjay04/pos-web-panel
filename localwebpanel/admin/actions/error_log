@@ -1,0 +1,21 @@
+[19-May-2021 07:09:00 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-May-2021 07:10:53 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-May-2021 07:10:55 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-May-2021 07:10:55 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-May-2021 07:10:55 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-May-2021 07:10:55 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[08-Sep-2021 14:11:51 Asia/Manila] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/johnpalencia/aws.aiolosinnovativesolutions.com/admin/actions/editcategory.php on line 7
+[08-Sep-2021 14:26:14 Asia/Manila] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/johnpalencia/aws.aiolosinnovativesolutions.com/admin/actions/editcategory.php on line 7
+[08-Sep-2021 14:26:29 Asia/Manila] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/johnpalencia/aws.aiolosinnovativesolutions.com/admin/actions/editcategory.php on line 7
+[24-Jan-2022 19:36:03 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function FullDateFormat24HR() in /home1/johnpalencia/dgpos.app/admin/actions/savealter.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/johnpalencia/dgpos.app/admin/actions/savealter.php on line 5
+[24-Jan-2022 19:36:35 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function FullDateFormat24HR() in /home1/johnpalencia/dgpos.app/admin/actions/savealter.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/johnpalencia/dgpos.app/admin/actions/savealter.php on line 5
+[24-Jan-2022 19:36:40 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function FullDateFormat24HR() in /home1/johnpalencia/dgpos.app/admin/actions/savealter.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/johnpalencia/dgpos.app/admin/actions/savealter.php on line 5
