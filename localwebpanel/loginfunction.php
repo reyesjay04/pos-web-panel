@@ -62,19 +62,10 @@ if (row_count($sql) == 1) {
 		$_SESSION["manager_account_created"] = $row["Date"];
 		$_SESSION["manager_account_updated"] = $row["date_updated"];
 		$_SESSION['manager_user_guid']       = $row["user_id"];
+
 		UpdateLastLogin($row["user_id"]);	
-		$store_ids   = '';
-		$store_guids = '';
-		$query   = query("SELECT store_id, user_guid FROM admin_outlets WHERE manager_guid = '".$_SESSION["manager_user_guid"]."' AND active = 2");
-		confirm($query);
-
-		while ($row1 = fetch_array($query )) { 
-			$store_ids   .= $row1['store_id'].',';
-			$store_guids .= "'".$row1['user_guid']."',";
-		}
-
-		$_SESSION["manager_store_id"]   = rtrim($store_ids,',');		
-		$_SESSION["manager_store_guid"] = rtrim($store_guids,',');	
+			
+		$_SESSION["manager_store_id"]   = $row["store_ids"];		
 		
 		echo "manager";
 	} else {

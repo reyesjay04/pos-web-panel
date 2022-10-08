@@ -1,7 +1,7 @@
 <?php
 include('../../resources/functions.php');
 $store_arr = array();
-$query = query("SELECT store_name, store_id FROM posrev.admin_outlets WHERE manager_guid = ''");
+$query = query("SELECT store_name, store_id FROM admin_outlets");
 confirm($query);
 while ($row = fetch_array($query)) { 
 	$store_id =  $row['store_id'];

@@ -1,29 +1,25 @@
 <?php session_start();
 
   $StoreIDS     = $_SESSION["manager_store_id"];
-  $ManagerGuids = $_SESSION["manager_store_guid"];
 
-  if ($ManagerGuids == "") {
-    $ManagerGuids = "'N/A'";
-  }
+
   if ($StoreIDS == "") {
     $StoreIDS = "'N/A'";
   }
+  
   if(!isset($_SESSION["managerpanel"])) {
     header("Location:../");
   } else {
-    if ($_SERVER['REQUEST_URI'] == "/manager/" || $_SERVER['REQUEST_URI'] == "/manager/?dashboard") {
+    include '../resources/config.php';
+    if ($_SERVER['REQUEST_URI'] == $_POSURI."manager/" || $_SERVER['REQUEST_URI'] == $_POSURI."manager/?dashboard") {
 
         include('dashboard.php');
 
     } elseif(isset($_GET['outlets'])) {
-
         include("outlets.php");
 
     } elseif(isset($_GET['users'])) {
-
-        include("users.php");
-        
+        include("users.php");      
     }
     elseif(isset($_GET['settings'])) {
         include("generalsettings.php");

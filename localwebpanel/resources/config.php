@@ -1,5 +1,5 @@
 <?php
 
-$_POSURI = "/localwebpanel/";
+$_POSURI = "/pos-web-panel/localwebpanel/";
 
 ?>

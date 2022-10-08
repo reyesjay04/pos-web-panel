@@ -4,7 +4,7 @@ include_once '../../resources/functions.php';
 $User_List = array();
 
 
-$query = query("SELECT * FROM posrev.admin_message WHERE guid IN (".$_SESSION['manager_store_guid'].")  GROUP BY `from` ORDER BY `created_at` desc");
+$query = query("SELECT * FROM admin_message WHERE guid IN (".$_SESSION['manager_store_id'].")  GROUP BY `from` ORDER BY `created_at` desc");
 
 confirm($query);
 

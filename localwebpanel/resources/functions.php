@@ -3,7 +3,7 @@
 
 
     include 'config.php';
-    if($_POSURI == "/localwebpanel/") {
+    if($_POSURI == "/pos-web-panel/localwebpanel/") {
         include 'conn.php';
     } else {
         include 'conn-server.php';
@@ -37,6 +37,13 @@
         confirm($query);
         $row = mysqli_fetch_array($query);
         $municipality = $row['mn_name'];
+        return $municipality;
+    }
+    function selectManagerStores($user_id) {
+        $query = query("SELECT store_ids FROM admin_user WHERE user_id = $user_id");
+        confirm($query);
+        $row = mysqli_fetch_array($query);
+        $municipality = $row['store_ids'];
         return $municipality;
     }
     function selectprovince($provinceID){

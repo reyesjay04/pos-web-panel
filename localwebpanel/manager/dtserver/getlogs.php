@@ -1,9 +1,6 @@
 <?php session_start();
 include('../../resources/functions.php');
-$ManagerGuid = $_SESSION['manager_store_guid'];
-if ($ManagerGuid == "") {
-    $ManagerGuid = "'N/A'";
-}
+
 $StoreIDS     = $_SESSION["manager_store_id"];
 if ($StoreIDS == "") {
 $StoreIDS = "'N/A'";

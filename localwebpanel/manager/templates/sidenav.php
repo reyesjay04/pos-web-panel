@@ -24,7 +24,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="?dashboard" class="nav-link  <?= ($_SERVER['REQUEST_URI']=="/manager/?dashboard" || $_SERVER['REQUEST_URI']=="/manager/" )?"active":"";?>">
+            <a href="?dashboard" class="nav-link  <?= ($_SERVER['REQUEST_URI']== $_POSURI."manager/?dashboard" || $_SERVER['REQUEST_URI']== $_POSURI."manager/" )?"active":"";?>">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -32,7 +32,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="?inbox" class="nav-link  <?= ($_SERVER['REQUEST_URI']=="/manager/?inbox")?"active":"";?>">
+            <a href="?inbox" class="nav-link  <?= ($_SERVER['REQUEST_URI'] == $_POSURI."manager/?inbox")?"active":"";?>">
               <i class="nav-icon fas fa-sticky-note"></i>
               <p>
                 Inbox
@@ -40,7 +40,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="?outlets" class="nav-link <?= ($_SERVER['REQUEST_URI']=="/manager/?outlets")?"active":"";?>">
+            <a href="?outlets" class="nav-link <?= ($_SERVER['REQUEST_URI'] == $_POSURI."manager/?outlets")?"active":"";?>">
               <i class="nav-icon fas fa-store-alt"></i>
               <p>
                 Outlets
@@ -48,7 +48,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="?users" class="nav-link <?= ($_SERVER['REQUEST_URI']=="/manager/?users")?"active":"";?>">
+            <a href="?users" class="nav-link <?= ($_SERVER['REQUEST_URI'] == $_POSURI."manager/?users")?"active":"";?>">
               <i class="nav-icon fas fa-user-alt"></i>
               <p>
                 Employees
@@ -57,7 +57,7 @@
           </li>
           <li class="nav-header">Reports</li>
           <li class="nav-item">
-            <a href="?sales" class="nav-link <?= ($_SERVER['REQUEST_URI']=="/manager/?sales" || $_SERVER['REQUEST_URI']=="/manager/?store=".$_GET['store'])?"active":"";?>">
+            <a href="?sales" class="nav-link <?= ($_SERVER['REQUEST_URI'] == $_POSURI."manager/?sales" || $_SERVER['REQUEST_URI'] == $_POSURI."manager/?store=".$_GET['store'])?"active":"";?>">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Sales
@@ -65,7 +65,7 @@
             </a>
           </li>       
           <li class="nav-item">
-            <a href="?inventory" class="nav-link <?= ($_SERVER['REQUEST_URI']=="/manager/?inventory"|| $_SERVER['REQUEST_URI']=="/manager/?viewinv=".$_GET['viewinv'])?"active":"";?>">
+            <a href="?inventory" class="nav-link <?= ($_SERVER['REQUEST_URI']== $_POSURI."manager/?inventory" || $_SERVER['REQUEST_URI']== $_POSURI."manager/?viewinv=".$_GET['viewinv'])?"active":"";?>">
               <i class="nav-icon fas fa-boxes"></i>
               <p>
                 Inventory
@@ -73,7 +73,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="?logs" class="nav-link <?= ($_SERVER['REQUEST_URI']=="/manager/?logs"|| $_SERVER['REQUEST_URI']=="/manager/?syslogs=".$_GET['syslogs'])?"active":"";?>">
+            <a href="?logs" class="nav-link <?= ($_SERVER['REQUEST_URI']== $_POSURI."manager/?logs"|| $_SERVER['REQUEST_URI']== $_POSURI."manager/?syslogs=".$_GET['syslogs'])?"active":"";?>">
               <i class="nav-icon fas fa-bug"></i>
               <p>
                 System Logs
@@ -82,7 +82,7 @@
           </li>
           <li class="nav-header">Informations</li>
           <li class="nav-item">
-            <a href="?about"class="nav-link <?= ($_SERVER['REQUEST_URI']=="/manager/?about")?"active":"";?>">
+            <a href="?about"class="nav-link <?= ($_SERVER['REQUEST_URI']== $_POSURI."manager/?about")?"active":"";?>">
               <i class="nav-icon fas fa-info-circle"></i>
               <p>
                 About Us
@@ -98,7 +98,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="?faqs"class="nav-link <?= ($_SERVER['REQUEST_URI']=="/manager/?faqs")?"active":"";?>">
+            <a href="?faqs"class="nav-link <?= ($_SERVER['REQUEST_URI']== $_POSURI."manager/?faqs")?"active":"";?>">
               <i class="nav-icon fas fa-question-circle"></i>
               <p>
                 Faqs
@@ -106,7 +106,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="?help"class="nav-link <?= ($_SERVER['REQUEST_URI']=="/manager/?help")?"active":"";?>">
+            <a href="?help"class="nav-link <?= ($_SERVER['REQUEST_URI']== $_POSURI."manager/?help")?"active":"";?>">
               <i class="nav-icon fas fa-book-open"></i>
               <p>
                 Help

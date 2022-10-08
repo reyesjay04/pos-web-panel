@@ -4,7 +4,7 @@ include('../../resources/functions.php');
 $store_arr = array();
 
 
-$sql = "SELECT store_id , store_name FROM admin_outlets WHERE manager_guid = '".$_POST["guid"]."' ";
+$sql = "SELECT store_id , store_name FROM admin_outlets WHERE store_id IN ('".$_POST["guid"]."') ";
 
 $result = query($sql);
 
